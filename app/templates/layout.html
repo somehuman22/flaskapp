@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <title>{{title}}</title>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-inverse navbar-toggleable-md bg-primary">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+        <a class="navbar-brand" href="#">App</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/new/post">New Post</span></a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <style>
+        .top-margin {
+            margin-top: 2em;
+        }
+    </style>
+    {% block content %} {% endblock %}
+</body>
+
+</html>

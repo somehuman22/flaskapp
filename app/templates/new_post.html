@@ -1,0 +1,24 @@
+{% extends "layout.html" %} {% block content %}
+<div class="container top-margin">
+    <form action="/new/post" method="post">
+        <div class="row form-group top-margin">
+            <label class="col-md-1 col-form-label">Title:</label>
+            <div class="col-md-7">
+                <input name="title" placeholder="Something..." type="text" class="form-control" />
+            </div>
+        </div>
+        <div class="row form-group top-margin">
+            <div class="col-md-1"></div>
+            <div class="col-md-7">
+                <textarea name="body" rows="4" class="form-control" placeholder="Enter stuff here..."></textarea>
+            </div>
+        </div>
+        <div class="row form-group top-margin">
+            <div class="col-md-1"></div>
+            <div class="col-md-1">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}
